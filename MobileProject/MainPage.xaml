@@ -1,0 +1,195 @@
+﻿<Page
+    x:Class="MobileProject.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MobileProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:MobileProject.Models"
+    Loaded="Page_Loaded"
+    mc:Ignorable="d">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView x:Name="menu" IsPaneOpen="False" DisplayMode="CompactOverlay" CompactPaneLength="50" OpenPaneLength="130">
+            <SplitView.Pane>
+                <ListBox SelectionMode="Single"
+                         SelectionChanged="ListBox_SelectionChanged"
+                         Background="LightGray">
+                    <ListBoxItem Name="DisplayMenu">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock 
+                                Text="&#xE700;"
+                                FontFamily="Segoe MDL2 Assets" 
+                                FontSize="20"
+                                Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Home">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock 
+                                Text="&#xE80F;"
+                                FontFamily="Segoe MDL2 Assets" 
+                                FontSize="20"
+                                Margin="5,0,0,0"/>
+                            <TextBlock
+                                Text="Home" 
+                                FontSize="20" 
+                                Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Work">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
+                                Text="&#xE90F;"
+                                FontFamily="Segoe MDL2 Assets" 
+                                FontSize="20"
+                                Margin="5,0,0,0"/>
+                            <TextBlock
+                                Text="Work" 
+                                FontSize="20" 
+                                Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Shop">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock 
+                                Text="&#xE719;"
+                                FontFamily="Segoe MDL2 Assets" 
+                                FontSize="20"
+                                Margin="5,0,0,0"/>
+                            <TextBlock
+                                Text="Shop" 
+                                FontSize="20" 
+                                Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Leisure">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
+                                Text="&#59246;"
+                                FontFamily="Segoe MDL2 Assets" 
+                                FontSize="20"
+                                Margin="5,0,0,0"/>
+                            <TextBlock
+                                Text="Leisure" 
+                                FontSize="20" 
+                                Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Events">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock 
+                                Text="&#59271;"
+                                FontFamily="Segoe MDL2 Assets" 
+                                FontSize="20"
+                                Margin="5,0,0,0"/>
+                            <TextBlock
+                                Text="Events" 
+                                FontSize="20" 
+                                Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Other">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock 
+                                Text="&#xE73A;"
+                                FontFamily="Segoe MDL2 Assets" 
+                                FontSize="20"
+                                Margin="5,0,0,0"/>
+                            <TextBlock
+                                Text="Other" 
+                                FontSize="20" 
+                                Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="80"/>
+                    </Grid.RowDefinitions>
+                    <RelativePanel Background="LightGray" Grid.Row="0">
+                        <Button Name="newEntry"
+                                Click="newEntry_Click"
+                                Content="&#59152;"
+                                FontSize="20"
+                                FontFamily="Segoe MDL2 Assets"
+                                Background="{x:Null}"
+                                RelativePanel.AlignRightWithPanel="True"
+                                Margin="0,2,0,0"/>
+                        <TextBlock Text="Home"
+                                   Name="titleTextBlock"
+                                   FontSize="20"
+                                   Margin="0,2,0,0"
+                                   RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+                        <Button Content="&#59213;"
+                                Name="RemoveItem"
+                                Click="RemoveItem_Click"
+                                FontSize="20"
+                                FontFamily="Segoe MDL2 Assets"
+                                Background="{x:Null}"
+                                RelativePanel.AlignLeftWithPanel="True"
+                                Margin="0,2,0,0"/>
+                        <Button Content="&#xE768;"
+                                RelativePanel.LeftOf="newEntry"
+                                Name="playButton"
+                                FontSize="20"
+                                FontFamily="Segoe MDL2 Assets"
+                                Background="{x:Null}"
+                                Margin="0,2,0,0"
+                                Click="playButton_Click"/>
+                    </RelativePanel>
+                    <RelativePanel x:Name="AddNewEntryPanel" Visibility="Collapsed" Background="LightGray" Width="300" Height="80" Grid.Row="2">
+                        <TextBox Name="entryTextBox" Text="New Entry" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,5,0,5" Width="280"/>
+                        <Button Content="OK" Name="addEntry" Click="addEntry_Click" Width="150" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" BorderBrush="Gray" Background="{x:Null}"/>
+                        <Button Content="Cancel" Click="cancelAdd_Click" Name="cancelAdd" Width="150" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" BorderBrush="Gray" Background="{x:Null}"/>
+                    </RelativePanel>
+                    <ListView Name="ItemsView" ItemsSource="{x:Bind entryList}"
+                          Grid.Row="1">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="data:Entry">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="20"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="{x:Bind entry}"
+                                           Grid.Column="0"
+                                           FontSize="18"/>
+                                    <TextBlock Text="{x:Bind date}" 
+                                            FontSize="18"
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Right"/>
+                                    <TextBlock Grid.Column="0"
+                                            Grid.Row="1"
+                                            Opacity="0.4"
+                                            FontSize="10"
+                                            HorizontalAlignment="Left">
+                                            <Run Text="{x:Bind latitude}"/>
+                                            <Run Text="   "/>
+                                            <Run Text="{x:Bind longitude}"/>
+                                    </TextBlock>
+                                    <TextBlock Text="{x:Bind time}"
+                                            FontSize="18"
+                                            Grid.Column="1"
+                                            Grid.Row="1"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                    </ListView>
+                </Grid>
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+</Page>

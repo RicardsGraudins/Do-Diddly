@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Richard\Desktop\c# shit\backup\observable\MobileProject\bin\x86\Release\Upload\MobileProject_1.1.4.0_x86.appx
+SymbolPackage=C:\Users\Richard\Desktop\c# shit\backup\observable\MobileProject\AppPackages\MobileProject_1.1.4.0\MobileProject_1.1.4.0_x86.appxsym

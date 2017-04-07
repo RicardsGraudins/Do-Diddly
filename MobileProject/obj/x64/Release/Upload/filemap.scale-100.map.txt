@@ -1,0 +1,9 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.scale-100"
+"ResourceDimensions"		"scale-100"
+
+[Files]
+"C:\Users\Richard\Desktop\c# shit\backup\observable\MobileProject\obj\x64\Release\Upload\filemap.scale-100.pri"			"resources.pri"
+"C:\Users\Richard\Desktop\c# shit\backup\observable\MobileProject\obj\x64\Release\PackageUploadLayout\Assets\StoreLogo.scale-100.png"			"Assets\StoreLogo.scale-100.png"
+"C:\Users\Richard\Desktop\c# shit\backup\observable\MobileProject\obj\x64\Release\PackageUploadLayout\Assets\Square150x150Logo.scale-100.png"			"Assets\Square150x150Logo.scale-100.png"
+"C:\Users\Richard\Desktop\c# shit\backup\observable\MobileProject\obj\x64\Release\PackageUploadLayout\Assets\Square150x150.scale-100.png"			"Assets\Square150x150.scale-100.png"

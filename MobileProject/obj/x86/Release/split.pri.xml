@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="64357BRONZESKRUBLORD.Do-Diddly" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>200</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/App.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/MainPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileProject.xr.xml" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/MobileProject.xr.xml">
+				<Candidate type="Path">
+					<Value>MobileProject.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="icon142x142.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/icon142x142.png">
+					<Candidate type="Path">
+						<Value>Assets\icon142x142.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon150x150.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/icon150x150.png">
+					<Candidate type="Path">
+						<Value>Assets\icon150x150.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon300x300.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/icon300x300.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\icon300x300.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon50x50.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/icon50x50.png">
+					<Candidate type="Path">
+						<Value>Assets\icon50x50.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon71x71.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/icon71x71.png">
+					<Candidate type="Path">
+						<Value>Assets\icon71x71.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon88x88.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/icon88x88.png">
+					<Candidate type="Path">
+						<Value>Assets\icon88x88.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="splashScreen1240x600.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/splashScreen1240x600.png">
+					<Candidate type="Path">
+						<Value>Assets\splashScreen1240x600.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/Square150x150.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square150x150.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square150x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/Square44x44Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Assets/StoreLogo.png"/>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://64357BRONZESKRUBLORD.Do-Diddly/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,3 @@
+MainPackage=C:\Users\Richard\Desktop\c# shit\backup\observable\MobileProject\bin\ARM\Release\Upload\MobileProject_1.1.4.0_ARM.appx
+SymbolPackage=C:\Users\Richard\Desktop\c# shit\backup\observable\MobileProject\AppPackages\MobileProject_1.1.4.0\MobileProject_1.1.4.0_ARM.appxsym
+ResourcePack=C:\Users\Richard\Desktop\c# shit\backup\observable\MobileProject\_scale-100.appx

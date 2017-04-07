@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="64357BRONZESKRUBLORD.Do-Diddly" Publisher="CN=F388952F-D311-4B2C-BBDB-C90EFC7AA9C9" Version="1.1.4.0" />
+  <mp:PhoneIdentity PhoneProductId="4d34419d-2286-4880-8510-7caae902418c" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Do-Diddly</DisplayName>
+    <PublisherDisplayName>BRONZE SKRUBLORD</PublisherDisplayName>
+    <Logo>Assets\icon50x50.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MobileProject.App">
+      <uap:VisualElements DisplayName="Do-Diddly" Square150x150Logo="Assets\icon300x300.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Digital journal that stores user's entries locally and provides time, date and GPS location of entry. Also supports playback of entry using Microsoft's SpeechSynthesizer." BackgroundColor="transparent">
+        <uap:DefaultTile ShortName="Do-Diddly" Square71x71Logo="Assets\Square150x150.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="landscape" />
+          <uap:Rotation Preference="portraitFlipped" />
+          <uap:Rotation Preference="landscapeFlipped" />
+        </uap:InitialRotationPreference>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>
